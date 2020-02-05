@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/stiloGeneral.css">
+	<title>Mi Acordeon</title>
+	<link rel="stylesheet" href="css/stilo.css">
 </head>
 <body>
-    <header id="header" class="">
-        <h1><span>SoloLearn</span></h1>
-        <ul>
-            <li>Inicio</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-        </ul>
-    </header><!-- /header -->
-    <article>
-        <H1><span>Bienvenido a HTML</span></H1>
-        <section>
-            <article>
-                <h1>INTRODUCCIÓN</h1>
+	<header class="headerInicio">
+		<img class="logo" src="img/logos.png" alt="logo">
+		<h1><span>Mi Acordeon</span></h1>
+    </header> <!--fin headear-->
+    <nav class="nav">
+			<ul id="lista">
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="html.html">HTML</a></li>
+				<li><a href="CSS.html">CSS</a></li>
+				<li><a href="JS.html">JS</a></li>
+				<li><a href="python.html">PYTHON</a></li>
+			</ul>
+	</nav>
+    <section > <!--Introducción-->
+        <H1 class="encabezados"><span>Bienvenido a HTML</span> </H1>
+        <article class="section parrafos"> <!--Introduccion-->
+            <h1>INTRODUCCIÓN</h1>
+            <hr>
+            <p>
+                HTML5 no es una nueva versión del antiguo lenguaje de etiquetas, ni siquiera una mejora
+                de esta ya antigua tecnología, sino un nuevo concepto para la construcción de sitios web y
+                aplicaciones en una era que combina dispositivos móviles, computación en la nube y
+                trabajos en red.
+            </p>
+            <p>
+                HTML5 es, de hecho, una mejora de esta combinación, el pegamento que une todo.
+                HTML5 propone estándares para cada aspecto de la web y también un propósito claro
+                para cada una de las tecnologías involucradas. A partir de ahora, HTML provee los
+                elementos estructurales, CSS se encuentra concentrado en cómo volver esa estructura
+                utilizable y atractiva a la vista, y Javascript tiene todo el poder necesario para proveer
+                dinamismo y construir aplicaciones web completamente funcionales.
+                Las barreras entre sitios webs y aplicaciones finalmente han desaparecido. Las
+                tecnologías requeridas para el proceso de integración están listas. El futuro de la web es
+                prometedor y la evolución y combinación de estas tres tecnologías (HTML, CSS y
+                Javascript) en una poderosa especificación está volviendo a Internet la plataforma líder de
+                desarrollo. HTML5 indica claramente el camino.
+            </p>
+        </article>
+        <div>
+            <h1 class="encabezados">Capítulo 1</h1 >
+        </div>
+        <article class="section parrafos"><!--Inicio capitulo 1--> 
+            <h2><span>Componetes Básicos</span></h2> <!--1.1-->
+            <hr>
+            <p>
+                HTML5 provee básicamente tres características: estructura, estilo y funcionalidad. Nunca
+                fue declarado oficialmente pero, incluso cuando algunas APIs (Interface de Programación
+                de Aplicaciones) y la especificación de CSS3 por completo no son parte del mismo, HTML5
+                es considerado el producto de la combinación de HTML, CSS y Javascript. Estas tecnologías 
+                son altamente dependientes y actúan como una sola unidad organizada bajo la
+                especificación de HTML5. HTML está a cargo de la estructura, CSS presenta esa estructura
+                y su contenido en la pantalla y Javascript hace el resto que es extremadamente significativo.
+            </p>
+            <p>
+                La misma provee los elementos necesarios para ubicar contenido estático o
+                dinámico, y es también una plataforma básica para aplicaciones. Con la variedad de
+                dispositivos para acceder a Internet y la diversidad de interfaces disponibles para
+                interactuar con la web, un aspecto básico como la estructura se vuelve parte vital del
+                documento. 
+            </p>
+        </article>
+        <article>  
+            <h1 class="encabezados">Estructura Global</h1>
+            <div class="section parrafos">
                 <p>
-                    HTML5 no es una nueva versión del antiguo lenguaje de etiquetas, ni siquiera una mejora
-                    de esta ya antigua tecnología, sino un nuevo concepto para la construcción de sitios web y
-                    aplicaciones en una era que combina dispositivos móviles, computación en la nube y
-                    trabajos en red.
+                    Los documentos HTML se encuentran estrictamente organizados. Cada parte del
+                    documento está diferenciada, declarada y determinada por etiquetas.
                 </p>
+                <br>
                 <p>
-                    HTML5 es, de hecho, una mejora de esta combinación, el pegamento que une todo.
-                    HTML5 propone estándares para cada aspecto de la web y también un propósito claro
-                    para cada una de las tecnologías involucradas. A partir de ahora, HTML provee los
-                    elementos estructurales, CSS se encuentra concentrado en cómo volver esa estructura
-                    utilizable y atractiva a la vista, y Javascript tiene todo el poder necesario para proveer
-                    dinamismo y construir aplicaciones web completamente funcionales.
-                    Las barreras entre sitios webs y aplicaciones finalmente han desaparecido. Las
-                    tecnologías requeridas para el proceso de integración están listas. El futuro de la web es
-                    prometedor y la evolución y combinación de estas tres tecnologías (HTML, CSS y
-                    Javascript) en una poderosa especificación está volviendo a Internet la plataforma líder de
-                    desarrollo. HTML5 indica claramente el camino.
-                </p>	
-                <p>
-                    Tenga en mente que un buen
-                    desarrollador instala y prueba sus códigos en cada programa disponible en el
-                    mercado. Ejecute los códigos provistos en este libro en cada uno de los
-                    navegadores disponibles.
-                    Para descargar las últimas versiones, visite los siguientes enlaces:
-                        • www.google.com/chrome
-                        • www.apple.com/safari/download
-                        • www.mozilla.com
-                        • windows.microsoft.com
-                        • www.opera.com
+                    <h2>DOCTYPE</h2>
+                    <hr>
+                    
                 </p>
-            </article>
-        </section>
+            </div>
+        </article>
+
+    </section>
 </body>
 </html>
