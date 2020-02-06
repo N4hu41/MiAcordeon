@@ -18,7 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
   line-height: 1;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 ol, ul {
   list-style: none;
@@ -30,6 +30,11 @@ blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
+}
+
+.fondo{
+  background-image: url(../img/fondo2.jpg);
+  padding: 1em;
 }
 
 .logo{
@@ -53,16 +58,14 @@ q:before, q:after {
     margin-left: 10em;
     text-align: center;
     color: blanchedalmond;
-    
-
-    /*padding: 20px;*/
 }
 
 .section{
-  background-color: cornflowerblue;
+  background-color: #D6DDE3;
   margin-top: 1.25em;
   margin-left: 5em;
   margin-right: 5em;
+  margin-bottom: 1em;
   padding: 2em;
   border-radius: .5em;
   border: black;
@@ -75,13 +78,26 @@ q:before, q:after {
   border-radius: 1em;
   margin-left: 20em;
   margin-right: 20em;
-  margin-top: 1em;
+  /*margin-top: 1em;*/
   padding: 2em;
   text-align: center;
   font-size: 1.45em;
 }
 
+h2{
+  font-size: 1.25em;
+  font-style: oblique;
+}
+
 .parrafos{
   text-align: justify;
-  color: aliceblue;
+  color: black;
+}
+
+.ejemplos{
+  border: #546878 8px outset;
+  padding: 1em;
+  background-color: #41505C;
+  color: #DA285B;
+  border-radius: 1em;
 }

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/stiloGeneral.css">
 	<title>Mi Acordeon</title>
 	<link rel="stylesheet" href="css/stilo.css">
@@ -23,10 +23,10 @@
 				<li><a href="python.html">PYTHON</a></li>
 			</ul>
 	</nav>
-    <section > <!--Introducción-->
-        <H1 class="encabezados"><span>Bienvenido a HTML</span> </H1>
+    <section class="fondo" > <!--Introducción-->
+        <H1 class="encabezados "><span>Bienvenido a HTML</span> </H1>
         <article class="section parrafos"> <!--Introduccion-->
-            <h1>INTRODUCCIÓN</h1>
+            <h2 class="subTitulos">INTRODUCCIÓN</h2>
             <hr>
             <p>
                 HTML5 no es una nueva versión del antiguo lenguaje de etiquetas, ni siquiera una mejora
@@ -52,7 +52,7 @@
             <h1 class="encabezados">Capítulo 1</h1 >
         </div>
         <article class="section parrafos"><!--Inicio capitulo 1--> 
-            <h2><span>Componetes Básicos</span></h2> <!--1.1-->
+            <h2><span class="subTitulos">Componetes Básicos</span></h2> <!--1.1-->
             <hr>
             <p>
                 HTML5 provee básicamente tres características: estructura, estilo y funcionalidad. Nunca
@@ -71,7 +71,7 @@
                 documento. 
             </p>
         </article>
-        <article>  
+        <article> <!--Estructura global 1.2-->
             <h1 class="encabezados">Estructura Global</h1>
             <div class="section parrafos">
                 <p>
@@ -79,14 +79,44 @@
                     documento está diferenciada, declarada y determinada por etiquetas.
                 </p>
                 <br>
+                <h2 class="subTitulos">DOCTYPE</h2>
+                <hr>
                 <p>
-                    <h2>DOCTYPE</h2>
-                    <hr>
-                    
+                    <strong>DOCTYPE</strong> Nos sirve para declarar el tipo de documento que estamos creando. 
+                </p>
+                <br>
+                <div class="ejemplos">
+                    <H1>< !DOCTYPE html ></H1>
+                </div>
+                <br>
+                <p>
+                    Esta línea debe ser la primera línea del archivo, sin espacios o líneas que la precedan. De esta forma, el modo estándar del navegador es dactivado y las incorporaciones de HTML5 son interpretadas siempre que sea posible.
                 </p>
             </div>
-        </article>
+            <div class="section parrafos">
+                <h2>HTML</h2>
+                <hr>
+                <P>
+                    La estructura tipo cascada de este lenguaje tiene su origen en el elemento <strong>< html ></html></strong>. Este elemento envolverá al resto del código:
+                </P>
+                <br>
+                <div class="ejemplos">
+                    <H1>
+                        < !DOCTYPE html > 
+                        <br>
+                        < html lang= "es">
+                        <br>
+                        <br>
+                        < /html > <br>
+                    </H1>
+                </div>
+                <br>
+                <p>
+                    El atributo <strong>lang</strong> en la etiqueta de apertura <html> es el único atributo que necesitamos especificar en HTML5. Este atributo define el idioma humano del contenido del documento que estamos creando, en este caso es por español.
+                </p>
 
+            </div>
+        </article>
     </section>
 </body>
 </html>
